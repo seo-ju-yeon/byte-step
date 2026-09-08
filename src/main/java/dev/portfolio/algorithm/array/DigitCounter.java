@@ -12,7 +12,6 @@ package dev.portfolio.algorithm.array;
 public class DigitCounter {
 
     public int[] solve(int a, int b, int c) {
-        // TODO: 세 수의 곱에 포함된 각 숫자의 등장 횟수를 구해 반환하세요.
         int product = a * b * c;
         int[] counts = new int[10];
 
