@@ -36,16 +36,15 @@ public class TwoSumCounter {
             int sum = numbers[left] + numbers[right];
 
             if (sum == target) {
+                // 정답 한 쌍을 찾았으므로 세고, 두 숫자 모두 다음으로 넘김
                 count++;
                 left++;
                 right--;
             } else if (sum < target) {
-                // 작으면 더 큰 합이 필요하므로 left 옮김
-                // 더 큰 숫자를 선택해 합을 키움
+                // 합이 부족하므로 왼쪽에서 더 큰 숫자를 선택
                 left++;
             } else {
-                // 크면 작은 합이 필요하므로 right 옮김
-                // 더 작은 숫자를 선택해 합을 줄임
+                // 합이 크므로 오른쪽에서 더 작은 숫자를 선택
                 right--;
             }
         }

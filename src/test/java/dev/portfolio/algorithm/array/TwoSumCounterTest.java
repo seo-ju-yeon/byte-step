@@ -15,7 +15,6 @@ class TwoSumCounterTest {
         int target = 6;
 
         assertEquals(2, twoSumCounter.solve(numbers, target));
-
     }
 
     @Test
@@ -25,7 +24,6 @@ class TwoSumCounterTest {
         int target = 10;
 
         assertEquals(1, twoSumCounter.solve(numbers, target));
-
     }
 
     @Test
@@ -35,7 +33,6 @@ class TwoSumCounterTest {
         int target = 7;
 
         assertEquals(1, twoSumCounter.solve(numbers, target));
-
     }
 
     @Test
@@ -45,7 +42,6 @@ class TwoSumCounterTest {
         int target = 7;
 
         assertEquals(0, twoSumCounter.solve(numbers, target));
-
     }
 
     @Test
@@ -55,7 +51,6 @@ class TwoSumCounterTest {
         int target = 10;
 
         assertEquals(0, twoSumCounter.solve(numbers, target));
-
     }
 
 }
