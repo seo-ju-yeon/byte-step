@@ -1,4 +1,4 @@
-package dev.portfolio.designpattern.decorator;
+package dev.portfolio.designpattern.decorator.coffee;
 
 /**
  * 데코레이터 패턴을 사용해 커피에 옵션을 추가하고 가격과 설명을 계산한다.

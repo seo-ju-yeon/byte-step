@@ -1,4 +1,4 @@
-package dev.portfolio.designpattern.decorator;
+package dev.portfolio.designpattern.decorator.coffee;
 
 public class MilkDecorator implements Beverage {
 

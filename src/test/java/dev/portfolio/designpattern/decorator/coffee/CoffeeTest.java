@@ -1,4 +1,4 @@
-package dev.portfolio.designpattern.decorator;
+package dev.portfolio.designpattern.decorator.coffee;
 
 import org.junit.jupiter.api.Test;
 
