@@ -1,4 +1,4 @@
-package dev.portfolio.designpattern.strategy;
+package dev.portfolio.designpattern.strategy.discount;
 
 /**
  * 전략 패턴을 사용해 상품의 최종 가격을 계산한다.

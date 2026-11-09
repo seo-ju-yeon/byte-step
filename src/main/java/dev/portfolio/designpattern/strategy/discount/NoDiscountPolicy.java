@@ -1,4 +1,4 @@
-package dev.portfolio.designpattern.strategy;
+package dev.portfolio.designpattern.strategy.discount;
 
 public class NoDiscountPolicy implements DiscountPolicy {
 

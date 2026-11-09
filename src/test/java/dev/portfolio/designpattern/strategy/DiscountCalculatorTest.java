@@ -1,5 +1,9 @@
 package dev.portfolio.designpattern.strategy;
 
+import dev.portfolio.designpattern.strategy.discount.DiscountCalculator;
+import dev.portfolio.designpattern.strategy.discount.FixedDiscountPolicy;
+import dev.portfolio.designpattern.strategy.discount.NoDiscountPolicy;
+import dev.portfolio.designpattern.strategy.discount.PercentDiscountPolicy;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
