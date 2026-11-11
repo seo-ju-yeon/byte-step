@@ -29,6 +29,11 @@ class EvenSumCalculatorTest {
     }
 
     @Test
+    void 최댓값_바로_아래의_홀수까지_짝수의_합을_구한다() {
+        assertEquals(24_995_000, evenSumCalculator.solve(9_999));
+    }
+
+    @Test
     void 입력의_최댓값인_10000까지_짝수의_합을_구한다() {
         assertEquals(25_005_000, evenSumCalculator.solve(10_000));
     }
