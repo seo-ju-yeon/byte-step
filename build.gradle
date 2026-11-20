@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.5.11'
+    id 'io.spring.dependency-management' version '1.1.7'
 }
 
 group = 'dev.portfolio'
@@ -10,24 +12,26 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // 웹 API와 내장 Tomcat 서버
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Log4j2 로깅
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
 
     // Lombok
-    compileOnly 'org.projectlombok:lombok:1.18.48'
-    annotationProcessor 'org.projectlombok:lombok:1.18.48'
-    testCompileOnly 'org.projectlombok:lombok:1.18.48'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.48'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
 
-    // Log4j2
-    implementation platform('org.apache.logging.log4j:log4j-bom:2.26.1')
-    implementation 'org.apache.logging.log4j:log4j-api'
-    runtimeOnly 'org.apache.logging.log4j:log4j-core'
+    // JUnit과 Spring Boot 테스트 지원
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
 
-    // DB 관련
-    // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
-//    implementation 'org.mariadb.jdbc:mariadb-java-client:3.5.3'
+configurations.configureEach {
+    exclude group: 'org.springframework.boot',
+            module: 'spring-boot-starter-logging'
 }
 
 test {
